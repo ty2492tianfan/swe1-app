@@ -20,12 +20,12 @@ after_script:
 
 deploy:
   provider: elasticbeanstalk
-  access_key_id: "a"
-  secret_access_key: "s"
-  region: "us-west-2"
-  app: "django-tutorial"
-  env: "django-env"
-  bucket_name: "elasticbeanstalk-us-west-2-891377257918"
+  access_key_id: "AWS_ACCESS_KEY_ID"
+  secret_access_key: "AWS_SECRET_ACCESS_KEY"
+  region: "us-east-1"
+  app: "tianfan"
+  env: "tianfan-dev"
+  bucket_name: "elasticbeanstalk-us-east-1-891377257918"
 
 
             
