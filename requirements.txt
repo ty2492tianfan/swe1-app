@@ -3,5 +3,5 @@ psycopg2-binary==2.9.3
 pytz==2024.1
 sqlparse==0.4.4
 black==23.1.0
-flake8==3.9.0   # Update to a compatible version of flake8
+flake8==3.9.0   
 coveralls==3.3.1
