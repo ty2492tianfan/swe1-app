@@ -6,28 +6,14 @@ python:
 install:
   - pip install -r requirements.txt
 
-# script:
-#   - black --check .
-#   - flake8 .
-#   - python manage.py migrate
-#   - coverage run manage.py test
-#   - coverage report
-
-# after_script:
-#   - coveralls
-
-
-install:
-  - pip install -r requirements.txt
-
 script:
   - black --check .
   - flake8 .
   - python manage.py migrate
-  - python manage.py test
-  - coverage run manage.py test  
-  - coverage report  
-after_success:
+  - coverage run manage.py test
+  - coverage report
+
+after_script:
   - coveralls
 
 deploy:
